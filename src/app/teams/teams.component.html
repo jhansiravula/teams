@@ -1,0 +1,72 @@
+
+<h1 class="text-center">teams works!</h1>
+<!--
+<h4 class="textcenter">Table 1</h4>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Team A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item1 of TeamA ">
+      <td><input type="checkbox" (change)="onSelectionChanged($event, item1, TeamA)"> {{item1.name}}  </td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="moveSelectedRecords(TeamA , TeamB)">Move down</button>
+<br>
+<br>
+
+<h4 class="textcenter">Table 2</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Team B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item2 of TeamB">
+          <td> <input type="checkbox" (change)="onSelectionChanged($event, item2, TeamB)"> {{item2.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="moveSelectedRecords(TeamB , TeamA)">Move Up</button>
+
+    -->
+
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="text-center">Team A</th>
+        <th class="text-center">Toggle</th>
+        <th class="text-center">Team B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul class="table  table-striped" *ngFor="let item of TeamA">
+           <!-- Default unchecked -->
+           <li>
+              <input type="checkbox" (change)="onSelectionChanged($event, item, TeamA)"> {{item.name}}</li>
+          </ul>
+        </td>
+        <td class=" toggle text-center ">
+          <button type="button" class="btn btn-teal btn-rounded btn-sm m-0" onclick="AtoB(TeamA,TeamB)">Team A -> Team B</button>
+          <br><br>
+          <button type="button" class="btn btn-teal btn-rounded btn-sm m-0" onclick="BtoA(TeamB,TeamA)">Team A <-- Team B</button>
+       <!-- <button type="button "><i class="fas fa-arrow-right m-3x" aria-hidden="true"></i></button><br><br><br>
+          <button type="button"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>-->
+       </td>
+        <td>
+          <ul *ngFor="let item of TeamB">
+            <!-- Default unchecked -->
+           <li><input type="checkbox" (change)="onSelectionChanged($event, item, TeamB)"> {{item.name}}</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

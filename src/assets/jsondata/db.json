@@ -1,0 +1,8 @@
+
+  {
+  "TeamA": [{"name": "TeamA 1"},{"name": "TeamA 2"},{"name": "TeamA 3"},{"name": "TeamA 4"},{"name": "TeamA 5"},{"name": "TeamA 6"},{"name": "TeamA 7"},{"name": "TeamA 8"}
+  ],
+
+  "TeamB": [{"name": "TeamB 1"},{"name": "TeamB 2"},{"name": "TeamB 3"},{"name": "TeamB 4"},{"name": "TeamB 5"},{"name": "TeamB 6"},{"name": "TeamB 7"},{"name": "TeamB 8"}
+  ]
+}
